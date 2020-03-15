@@ -84,25 +84,24 @@ public class BinaryTreeImpl implements BinaryTree {
     public void addElement(int value) {
         addElement(this.rootNode, value);
     }
-
-    //    // TODO: rename "latest" to something more fitting
-    public void addElement(Node latest, int element) {
+    
+    public void addElement(Node currentNode, int element) {
         if (numElements == 0) {
             createRootNode(element);
         }
-        if (element < latest.getValue()) {
-            if (latest.getLeftChild() == null) {
+        if (element < currentNode.getValue()) {
+            if (currentNode.getLeftChild() == null) {
                 numElements++;
-                latest.setLeftChild(new Node(element));
+                currentNode.setLeftChild(new Node(element));
             } else {
-                addElement(latest.getLeftChild(), element);
+                addElement(currentNode.getLeftChild(), element);
             }
         } else {
-            if (latest.getRightChild() == null) {
+            if (currentNode.getRightChild() == null) {
                 numElements++;
-                latest.setRightChild(new Node(element));
+                currentNode.setRightChild(new Node(element));
             } else {
-                addElement(latest.getRightChild(), element);
+                addElement(currentNode.getRightChild(), element);
             }
         }
     }
@@ -117,14 +116,14 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public boolean findElement(int value) {
-        Node latest = rootNode;
-        while (latest != null) {
-            if (latest.getValue() == value) {
+        Node currentNode = rootNode;
+        while (currentNode != null) {
+            if (currentNode.getValue() == value) {
                 return true;
-            } else if (latest.getValue() > value) {
-                latest = latest.getLeftChild();
-            } else if (latest.getValue() < value) {
-                latest = latest.getRightChild();
+            } else if (currentNode.getValue() > value) {
+                currentNode = currentNode.getLeftChild();
+            } else if (currentNode.getValue() < value) {
+                currentNode = currentNode.getRightChild();
             }
         }
         return false;

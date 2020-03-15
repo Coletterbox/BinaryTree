@@ -1,5 +1,7 @@
 package com.sparta.crss;
 
+import java.util.Arrays;
+
 public class BinaryTreeImpl implements BinaryTree {
 
     private Node rootNode;
@@ -73,11 +75,54 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public int[] getSortedTreeAsc() {
-        return new int[0];
+        int[] resultArray = new int[numElements];
+        int counter = 0;
+        int lastValue;
+        Node currentNode = rootNode;
+        while (counter <= numElements) {
+            lastValue = currentNode.getValue();
+            resultArray[counter] = lastValue;
+            counter++;
+            if (currentNode.getLeftChild() != null) {
+                currentNode = currentNode.getLeftChild();
+                counter++;
+            } else if (currentNode.getRightChild() != null) {
+                currentNode = currentNode.getRightChild();
+                counter++;
+            } else {
+                currentNode = currentNode.getParent();
+            }
+        }
+        Arrays.sort(resultArray);
+        return resultArray;
     }
 
     @Override
     public int[] getSortedTreeDesc() {
-        return new int[0];
+//        return BinaryTreeImpl.getSortedTreeAsc().reverse();
+        int[] resultArray = new int[numElements];
+        int counter = 0;
+        int lastValue;
+        Node currentNode = rootNode;
+        while (counter <= numElements) {
+            lastValue = currentNode.getValue();
+            resultArray[counter] = lastValue;
+            counter++;
+            if (currentNode.getLeftChild() != null) {
+                currentNode = currentNode.getLeftChild();
+                counter++;
+            } else if (currentNode.getRightChild() != null) {
+                currentNode = currentNode.getRightChild();
+                counter++;
+            } else {
+                currentNode = currentNode.getParent();
+            }
+        }
+        Arrays.sort(resultArray);
+        int[] resultArrayReversed = new int[resultArray.length];
+        for (int i = 0; i < resultArray.length; i++) {
+            resultArrayReversed[0] = resultArray[resultArray.length - i];
+        }
+        return resultArrayReversed;
     }
 }

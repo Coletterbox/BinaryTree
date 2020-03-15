@@ -87,19 +87,14 @@ class BinaryTreeTester {
 
 //    @Test
 //    void getLeftChild() {
-//        binaryTree.addElement(2);
 //        assertEquals("2", Integer.toString(Node.getLeftChild().getValue()));
 //    }
-
-    @Test
-    void getLeftChild() {
-        BinaryTreeImpl binaryTree2 = new BinaryTreeImpl();
-        binaryTree2.addElement(2);
-        binaryTree2.createRootNode(1);
-        assertEquals("2", Integer.toString(Node.getLeftChild(1).getValue()));
-    }
-
 //
+//    @Test
+//    void getLeftChild() {
+//        assertEquals("2", Integer.toString(BinaryTree.rootNode.getLeftChild(1).getValue()));
+//    }
+
 //    @Test
 //    void getRightChild() {
 //    }

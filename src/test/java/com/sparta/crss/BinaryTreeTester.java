@@ -91,13 +91,13 @@ class BinaryTreeTester {
 //        assertEquals("2", Integer.toString(Node.getLeftChild().getValue()));
 //    }
 
-//    @Test
-//    void getLeftChild() {
-//        BinaryTreeImpl binaryTree2 = new BinaryTreeImpl();
-//        binaryTree2.addElement(2);
-//        binaryTree2.createRootNode(1);
-//        assertEquals("2", Integer.toString(Node.getLeftChild(1).getValue()));
-//    }
+    @Test
+    void getLeftChild() {
+        BinaryTreeImpl binaryTree2 = new BinaryTreeImpl();
+        binaryTree2.addElement(2);
+        binaryTree2.createRootNode(1);
+        assertEquals("2", Integer.toString(Node.getLeftChild(1).getValue()));
+    }
 
 //
 //    @Test

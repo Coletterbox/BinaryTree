@@ -51,7 +51,6 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public void addElements(int[] elements) {
-        // TODO: change this, now that addElement takes two arguments
         for (int element : elements) {
             addElement(element);
         }

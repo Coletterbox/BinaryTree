@@ -11,106 +11,77 @@ import static org.junit.jupiter.api.Assertions.*;
 class BinaryTreeTester {
 
     private BinaryTreeImpl binaryTree;
+    private BinaryTreeImpl binaryTree2;
+    private BinaryTreeImpl binaryTree3;
 
     @BeforeEach
     public void setUp() {
 //        BinaryTreeImpl binaryTree = new BinaryTreeImpl();
         binaryTree = new BinaryTreeImpl(7);
-        binaryTree.createRootNode(1);
-//        binaryTree.addElement(2);
-//        binaryTree.addElements(new int[]{3, 5});
+        binaryTree.addElement(2);
+        binaryTree.addElements(new int[]{12, 3, 5, 8, 15, 43});
+
+        binaryTree2 = new BinaryTreeImpl(10);
+        binaryTree2.addElements(new int[]{4, 7, 1, 65, 3, 21, 45, 9});
+
+        binaryTree3 = new BinaryTreeImpl(1);
+        binaryTree3.addElement(2);
+        binaryTree3.addElement(3);
     }
 
 //    @AfterEach
 //    void tearDown() {
 //    }
-//
+
     @Test
     void testGetRootElement() {
-        assertEquals("1", Integer.toString(binaryTree.getRootElement()));
+        assertEquals("7", Integer.toString(binaryTree.getRootElement()));
     }
 
     @Test
     void testGetRootElement2() {
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(8);
-        assertEquals("8", Integer.toString(binaryTree.getRootElement()));
+        assertEquals("10", Integer.toString(binaryTree2.getRootElement()));
     }
 
     @Test
     void testGetRootElement3() {
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(10);
-        binaryTree.addElement(2);
-        binaryTree.addElement(3);
-        assertEquals("10", Integer.toString(binaryTree.getRootElement()));
+        assertEquals("1", Integer.toString(binaryTree3.getRootElement()));
     }
 
     @Test
     void testGetNumberOfElements() {
-        //use binaryTree.getNumberOfElements();
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(1);
-        binaryTree.addElement(2);
-        binaryTree.addElement(3);
-        assertEquals(3, binaryTree.getNumberOfElements());
+        assertEquals(8, binaryTree.getNumberOfElements());
     }
 
     @Test
     void testGetNumberOfElements2() {
-        //use binaryTree.getNumberOfElements();
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(1);
-        binaryTree.addElement(2);
-        binaryTree.addElement(3);
-        binaryTree.addElement(7);
-        binaryTree.addElement(9);
-        assertEquals(5, binaryTree.getNumberOfElements());
+        assertEquals(9, binaryTree2.getNumberOfElements());
     }
 
     @Test
     void testGetNumberOfElementsAfterAddingArrayOfElements() {
-        //use binaryTree.getNumberOfElements();
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(1);
         int[] array = {7, 4, 6, 1, 9, 13, 54, 97};
         binaryTree.addElements(array);
-        assertEquals(9, binaryTree.getNumberOfElements());
+        assertEquals(16, binaryTree.getNumberOfElements());
     }
-
 
     @Test
     void testAddElement() {
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(1);
-        binaryTree.addElement(2);
-        assertEquals(2, binaryTree.getNumberOfElements());
+        assertEquals(8, binaryTree.getNumberOfElements());
     }
 
     @Test
     void testAddElements() {
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(18);
-        int[] array = {16, 32, 45, 99, 7, 4, 6, 1, 9, 13, 54, 97};
-        binaryTree.addElements(array);
-        assertEquals(13, binaryTree.getNumberOfElements());
+        assertEquals(9, binaryTree2.getNumberOfElements());
     }
 
     @Test
     void testFindElement() {
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(18);
-        int[] array = {16, 32, 45, 99, 7, 4, 6, 1, 9, 13, 54, 97};
-        binaryTree.addElements(array);
-        assertEquals(true, binaryTree.findElement(32));
+        assertEquals(true, binaryTree2.findElement(65));
     }
 
     @Test
     void testFindElement2() {
-        binaryTree = new BinaryTreeImpl();
-        binaryTree.createRootNode(18);
-        int[] array = {16, 32, 45, 99, 7, 4, 6, 1, 9, 13, 54, 97};
-        binaryTree.addElements(array);
         assertEquals(false, binaryTree.findElement(33));
     }
 

@@ -90,4 +90,10 @@ class BinaryTreeTester {
     void testFindElement2() {
         assertEquals(false, binaryTree.findElement(33));
     }
+
+    @Test
+    void getSortedTreeAsc() {
+        int[] array = {2, 3};
+        Arrays.equals(array, binaryTree4.getSortedTreeAsc());
+    }
 }

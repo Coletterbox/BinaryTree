@@ -114,4 +114,6 @@ class BinaryTreeTester {
         int[] array = {1, 3, 4, 7, 9, 10, 21, 45, 65};
         Arrays.equals(array, binaryTree2.getSortedTreeDesc());
     }
+
+    //tests for sorted arrays also test .getLeftChild() and .getRightChild()
 }

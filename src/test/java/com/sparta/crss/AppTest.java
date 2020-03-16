@@ -35,9 +35,4 @@
 //    @Test
 //    void getRightChild() {
 //    }
-//
-//
-//    @Test
-//    void getSortedTreeDesc() {
-//    }
 //}

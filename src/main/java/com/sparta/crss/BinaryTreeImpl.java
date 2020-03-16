@@ -85,9 +85,13 @@ public class BinaryTreeImpl implements BinaryTree {
             counter++;
             if (currentNode.getLeftChild() != null) {
                 currentNode = currentNode.getLeftChild();
+                lastValue = currentNode.getValue();
+                resultArray[counter] = lastValue;
                 counter++;
             } else if (currentNode.getRightChild() != null) {
                 currentNode = currentNode.getRightChild();
+                lastValue = currentNode.getValue();
+                resultArray[counter] = lastValue;
                 counter++;
             } else {
                 currentNode = currentNode.getParent();

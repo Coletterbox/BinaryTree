@@ -5,6 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 //import org.junit.jupiter.api.Assertions.*;
 //import static org.junit.Assert.assertTrue;
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,6 +15,7 @@ class BinaryTreeTester {
     private BinaryTreeImpl binaryTree;
     private BinaryTreeImpl binaryTree2;
     private BinaryTreeImpl binaryTree3;
+    private BinaryTreeImpl binaryTree4;
 
     @BeforeEach
     public void setUp() {
@@ -27,6 +30,9 @@ class BinaryTreeTester {
         binaryTree3 = new BinaryTreeImpl(1);
         binaryTree3.addElement(2);
         binaryTree3.addElement(3);
+
+        binaryTree4 = new BinaryTreeImpl(2);
+        binaryTree4.addElement(3);
     }
 
 //    @AfterEach
@@ -84,26 +90,4 @@ class BinaryTreeTester {
     void testFindElement2() {
         assertEquals(false, binaryTree.findElement(33));
     }
-
-//    @Test
-//    void getLeftChild() {
-//        assertEquals("2", Integer.toString(Node.getLeftChild().getValue()));
-//    }
-//
-//    @Test
-//    void getLeftChild() {
-//        assertEquals("2", Integer.toString(BinaryTree.rootNode.getLeftChild(1).getValue()));
-//    }
-
-//    @Test
-//    void getRightChild() {
-//    }
-//
-//    @Test
-//    void getSortedTreeAsc() {
-//    }
-//
-//    @Test
-//    void getSortedTreeDesc() {
-//    }
 }

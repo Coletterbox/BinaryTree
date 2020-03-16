@@ -21,4 +21,28 @@
 //    public void shouldAnswerWithTrue() {
 //        assertTrue( true );
 //    }
+
+//    @Test
+//    void getLeftChild() {
+//        assertEquals("2", Integer.toString(Node.getLeftChild().getValue()));
+//    }
+//
+//    @Test
+//    void getLeftChild() {
+//        assertEquals("2", Integer.toString(BinaryTree.rootNode.getLeftChild(1).getValue()));
+//    }
+
+//    @Test
+//    void getRightChild() {
+//    }
+//
+//    @Test
+//    void getSortedTreeAsc() {
+//        int[] array = {2, 3};
+//        Arrays.equals(array, binaryTree4.getSortedTreeAsc());
+//    }
+//
+//    @Test
+//    void getSortedTreeDesc() {
+//    }
 //}

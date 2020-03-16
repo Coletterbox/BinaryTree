@@ -160,6 +160,12 @@ public class BinaryTreeImpl implements BinaryTree {
 //        }
 //        current = current.getParent();
 
-        return new int[0];
+//        return new int[0];
+
+        int[] resultArrayReversed = new int[resultArray.length];
+        for (int i = 0; i < resultArray.length; i++) {
+            resultArrayReversed[0] = resultArray[resultArray.length - i];
+        }
+        return resultArrayReversed;
     }
 }

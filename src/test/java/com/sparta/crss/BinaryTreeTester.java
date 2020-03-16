@@ -96,4 +96,10 @@ class BinaryTreeTester {
         int[] array = {2, 3};
         Arrays.equals(array, binaryTree4.getSortedTreeAsc());
     }
+
+    @Test
+    void getSortedTreeDesc() {
+        int[] array = {3, 2};
+        Arrays.equals(array, binaryTree4.getSortedTreeDesc());
+    }
 }

@@ -36,11 +36,6 @@
 //    void getRightChild() {
 //    }
 //
-//    @Test
-//    void getSortedTreeAsc() {
-//        int[] array = {2, 3};
-//        Arrays.equals(array, binaryTree4.getSortedTreeAsc());
-//    }
 //
 //    @Test
 //    void getSortedTreeDesc() {

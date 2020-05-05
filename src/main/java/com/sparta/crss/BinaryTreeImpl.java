@@ -169,25 +169,25 @@ public class BinaryTreeImpl implements BinaryTree {
         return resultArrayReversed;
     }
 
-    @Override
-    public int getLeftChild(int element) {
-//        return Node(element).getLeftChild();
-//        Node node = rootNode;
-//        return element.getLeftChild();
-        Node currentNode = rootNode;
-        while (currentNode != null) {
-            if (currentNode.getValue() == value) {
-                return currentNode.getValue();
-            } else if (currentNode.getValue() > value) {
-                currentNode = currentNode.getLeftChild();
-            } else if (currentNode.getValue() < value) {
-                currentNode = currentNode.getRightChild();
-            }
-        }
-    }
-
-    @Override
-    public int getRightChild(int element) {
-
-    }
+//    @Override
+//    public int getLeftChild(int element) {
+//////        return Node(element).getLeftChild();
+//////        Node node = rootNode;
+//////        return element.getLeftChild();
+////        Node currentNode = rootNode;
+////        while (currentNode != null) {
+////            if (currentNode.getValue() == value) {
+////                return currentNode.getValue();
+////            } else if (currentNode.getValue() > value) {
+////                currentNode = currentNode.getLeftChild();
+////            } else if (currentNode.getValue() < value) {
+////                currentNode = currentNode.getRightChild();
+////            }
+////        }
+//    }
+//
+//    @Override
+//    public int getRightChild(int element) {
+//
+//    }
 }

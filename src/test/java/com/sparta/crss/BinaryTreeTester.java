@@ -34,6 +34,12 @@ class BinaryTreeTester {
 
         binaryTree4 = new BinaryTreeImpl(2);
         binaryTree4.addElement(3);
+
+        System.out.println("setUp() is running");
+        System.out.println(Arrays.toString(binaryTree.getSortedTreeAsc()));
+        System.out.println(Arrays.toString(binaryTree2.getSortedTreeAsc()));
+        System.out.println(Arrays.toString(binaryTree3.getSortedTreeAsc()));
+        System.out.println(Arrays.toString(binaryTree4.getSortedTreeAsc()));
     }
 
 //    @AfterEach

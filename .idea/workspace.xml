@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fbc459d-6e9e-4261-97cf-9452a51e67dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/crss/BinaryTreeTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/crss/BinaryTreeTester.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BinaryTreeTester.getSortedTreeAsc">
+  <component name="RunManager" selected="JUnit.BinaryTreeTester">
     <configuration name="BinaryTreeTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BinaryTree" />
       <extension name="coverage">
@@ -131,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeTester" />
         <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeAsc" />
         <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeDesc2" />
         <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeAsc2" />
         <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeDesc" />
-        <item itemvalue="JUnit.BinaryTreeTester" />
       </list>
     </recent_temporary>
   </component>

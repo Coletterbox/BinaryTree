@@ -105,22 +105,22 @@ class BinaryTreeTester {
         assertTrue(Arrays.equals(array, array2));
     }
 
-    @Ignore
+    @Test
     void getSortedTreeDesc() {
         int[] array = {3, 2};
-        Arrays.equals(array, binaryTree4.getSortedTreeDesc());
+        assertTrue(Arrays.equals(array, binaryTree4.getSortedTreeDesc()));
     }
 
-    @Ignore
+    @Test
     void getSortedTreeAsc2() {
         int[] array = {1, 3, 4, 7, 9, 10, 21, 45, 65};
-        Arrays.equals(array, binaryTree2.getSortedTreeAsc());
+        assertTrue(Arrays.equals(array, binaryTree2.getSortedTreeAsc()));
     }
 
-    @Ignore
+    @Test
     void getSortedTreeDesc2() {
         int[] array = {1, 3, 4, 7, 9, 10, 21, 45, 65};
-        Arrays.equals(array, binaryTree2.getSortedTreeDesc());
+        assertTrue(Arrays.equals(array, binaryTree2.getSortedTreeDesc()));
     }
 
     //tests for sorted arrays also test .getLeftChild() and .getRightChild()

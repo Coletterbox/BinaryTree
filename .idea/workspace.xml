@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fbc459d-6e9e-4261-97cf-9452a51e67dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/crss/BinaryTreeTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/crss/BinaryTreeTester.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,25 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BinaryTreeTester.getSortedTreeAsc">
-    <configuration name="BinaryTreeTester (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BinaryTree" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sparta.crss.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sparta.crss" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.crss.BinaryTreeTester" />
-      <option name="TEST_OBJECT" value="uniqueId" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:com.sparta.crss.BinaryTreeTester]" />
-      </uniqueIds>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BinaryTreeTester.getSortedTreeDesc2">
     <configuration name="BinaryTreeTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BinaryTree" />
       <extension name="coverage">
@@ -79,25 +62,6 @@
       <option name="PACKAGE_NAME" value="com.sparta.crss" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.crss.BinaryTreeTester" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryTreeTester.getNumberOfElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BinaryTree" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sparta.crss.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sparta.crss" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.crss.BinaryTreeTester" />
-      <option name="METHOD_NAME" value="getNumberOfElements" />
-      <option name="TEST_OBJECT" value="method" />
-      <uniqueIds>
-        <uniqueId value="[engine:junit-jupiter]/[class:com.sparta.crss.BinaryTreeTester]" />
-      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.sparta.crss in BinaryTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryTreeTester.getSortedTreeAsc2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BinaryTree" />
       <extension name="coverage">
         <pattern>
@@ -127,18 +91,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.crss" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.crss.BinaryTreeTester" />
+      <option name="METHOD_NAME" value="getSortedTreeAsc2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTester.getSortedTreeDesc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BinaryTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.crss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.crss" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.crss.BinaryTreeTester" />
+      <option name="METHOD_NAME" value="getSortedTreeDesc" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTester.getSortedTreeDesc2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BinaryTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.crss.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.crss" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.crss.BinaryTreeTester" />
+      <option name="METHOD_NAME" value="getSortedTreeDesc2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeDesc2" />
+        <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeAsc2" />
+        <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeDesc" />
         <item itemvalue="JUnit.BinaryTreeTester.getSortedTreeAsc" />
         <item itemvalue="JUnit.BinaryTreeTester" />
-        <item itemvalue="JUnit.BinaryTreeTester.getNumberOfElements" />
-        <item itemvalue="JUnit.BinaryTreeTester (1)" />
-        <item itemvalue="JUnit.com.sparta.crss in BinaryTree" />
       </list>
     </recent_temporary>
   </component>

@@ -101,7 +101,8 @@ class BinaryTreeTester {
     @Test
     void getSortedTreeAsc() {
         int[] array = {2, 3};
-        int[] array2 = {3, 4, 5};
+        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(binaryTree4.getSortedTreeAsc()));
         assertTrue(Arrays.equals(array, binaryTree4.getSortedTreeAsc()));
     }
 
